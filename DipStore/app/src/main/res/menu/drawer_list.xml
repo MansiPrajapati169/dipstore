@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/myProfile"
+            android:icon="@drawable/user"
+            android:title="@string/txt_my_profile" />
+        <item
+            android:id="@+id/people"
+            android:icon="@drawable/user"
+            android:title="@string/txt_people" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/settings"
+            android:title="@string/txt_settings" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/share"
+                android:title="@string/txt_share" />
+            <item
+                android:id="@+id/send"
+                android:icon="@drawable/ic_baseline_send_24"
+                android:title="@string/txt_send" />
+        </menu>
+    </item>
+</menu>
