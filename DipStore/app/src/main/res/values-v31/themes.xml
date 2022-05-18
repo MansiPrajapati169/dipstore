@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="splashScreens" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowSplashScreenBackground">@color/button_color</item>
+        <item name="android:windowSplashScreenAnimationDuration">1000</item>
+        <item name="android:windowBackground">@drawable/dipstore</item>
+        <item name="android:windowSplashScreenBrandingImage">@drawable/dipstore</item>
+    </style>
+</resources>
