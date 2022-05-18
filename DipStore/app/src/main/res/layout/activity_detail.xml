@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.DetailActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/customToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/arrow">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:src="@drawable/nav_heart"
+                app:layout_constraintEnd_toStartOf="@id/ivCart"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:src="@drawable/nav_bag"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customToolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="24dp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivDetail"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_275sdp"
+                android:src="@drawable/detail_product"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivFirst"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="0dp"
+                android:src="@drawable/detail_product"
+                app:layout_constraintBottom_toTopOf="@id/ivSecond"
+                app:layout_constraintEnd_toEndOf="@id/guideline"
+                app:layout_constraintTop_toTopOf="@id/ivDetail" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivSecond"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="0dp"
+                android:src="@drawable/detail_second"
+                app:layout_constraintBottom_toTopOf="@id/ivThird"
+                app:layout_constraintEnd_toEndOf="@id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/ivFirst" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivThird"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="0dp"
+                android:src="@drawable/detail_third"
+                app:layout_constraintBottom_toTopOf="@id/ivFourth"
+                app:layout_constraintEnd_toEndOf="@id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/ivSecond" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivFourth"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="0dp"
+                android:src="@drawable/detail_fourth"
+                app:layout_constraintBottom_toTopOf="@id/ivFifth"
+                app:layout_constraintEnd_toEndOf="@id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/ivThird" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivFifth"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="0dp"
+                android:src="@drawable/detail_fifth"
+                app:layout_constraintBottom_toBottomOf="@id/ivDetail"
+                app:layout_constraintEnd_toEndOf="@id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/ivFourth" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvProductName"
+                style="@style/detailProductNameText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:text="@string/txt_product_name"
+                app:layout_constraintStart_toStartOf="@id/ivDetail"
+                app:layout_constraintTop_toBottomOf="@id/ivDetail" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPrice"
+                style="@style/detailProductNameText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:gravity="end"
+                android:text="@string/txt_price"
+                android:textColor="@color/button_color"
+                app:layout_constraintEnd_toEndOf="@id/ivDetail"
+                app:layout_constraintStart_toEndOf="@id/tvProductName"
+                app:layout_constraintTop_toBottomOf="@id/ivDetail" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/basePrice"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:textColor="@color/text_normal_color"
+                android:text="@string/txt_product_description"
+                app:layout_constraintEnd_toEndOf="@id/tvPrice"
+                app:layout_constraintStart_toStartOf="@id/tvProductName"
+                app:layout_constraintTop_toBottomOf="@id/tvProductName" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivBrand"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:src="@drawable/zara"
+                app:layout_constraintStart_toStartOf="@id/tvDescription"
+                app:layout_constraintTop_toBottomOf="@id/tvDescription" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvBrand"
+                style="@style/darkSmallText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:text="@string/txt_brand_name"
+                app:layout_constraintStart_toEndOf="@id/ivBrand"
+                app:layout_constraintTop_toBottomOf="@id/tvDescription" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/txt_account_name"
+                app:layout_constraintStart_toEndOf="@id/ivBrand"
+                app:layout_constraintTop_toBottomOf="@id/tvBrand"
+                app:layout_constraintBottom_toBottomOf="@id/ivBrand" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFollow"
+                style="@style/darkSmallText"
+                android:textAllCaps="false"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="@string/txt_follow"
+                app:layout_constraintEnd_toEndOf="@id/tvDescription"
+                app:layout_constraintTop_toBottomOf="@id/tvDescription"
+                app:layout_constraintTop_toTopOf="@id/tvBrand" />
+
+            <RadioGroup
+                android:id="@+id/rgSize"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@id/btnAddToBag"
+                app:layout_constraintEnd_toStartOf="@id/tvSizeGuide"
+                app:layout_constraintStart_toStartOf="@id/ivBrand"
+                app:layout_constraintTop_toBottomOf="@id/btnFollow">
+
+                <RadioButton
+                    android:id="@+id/btnXs"
+                    style="@style/radioButtonStyle"
+                    android:text="@string/txt_xs" />
+
+                <RadioButton
+                    android:id="@+id/btnS"
+                    style="@style/radioButtonStyle"
+                    android:text="@string/txt_s" />
+
+                <RadioButton
+                    android:id="@+id/btnM"
+                    style="@style/radioButtonStyle"
+                    android:text="@string/txt_m" />
+
+                <RadioButton
+                    android:id="@+id/btnL"
+                    style="@style/radioButtonStyle"
+                    android:text="@string/txt_l" />
+
+                <RadioButton
+                    android:id="@+id/btnXL"
+                    style="@style/radioButtonStyle"
+                    android:text="@string/txt_xl" />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSizeGuide"
+                android:layout_width="0dp"
+                style="@style/lightTextGreen"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_size_guide"
+                app:layout_constraintBottom_toBottomOf="@id/rgSize"
+                app:layout_constraintEnd_toEndOf="@id/btnFollow"
+                app:layout_constraintTop_toTopOf="@id/rgSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddToBag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_17sdp"
+                style="@style/button_green"
+                android:background="@drawable/button_design"
+                android:text="@string/txt_add_to_bag"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/tvSizeGuide"
+                app:layout_constraintStart_toStartOf="@id/rgSize"
+                app:layout_constraintTop_toBottomOf="@id/rgSize" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
