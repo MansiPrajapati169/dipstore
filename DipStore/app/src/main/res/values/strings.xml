@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">DipStore</string>
+    <string name="appName">Dipstore.</string>
+    <string name="btn_signin">Sign In</string>
+    <string name="btn_get_started">Get Started</string>
+    <string name="txt_sign_in">Please Sign In</string>
+    <string name="txt_subtitle_login">Enter your Dipstore account details for a personalised experience.</string>
+    <string name="hint_password">Password (at least 8 characters)</string>
+    <string name="hint_email">Email</string>
+    <string name="txt_forgot_pwd">Forgot Password?</string>
+    <string name="txt_signin">Sign In</string>
+    <string name="txt_signin_with">Or Sign In with</string>
+    <string name="txt_signin_google">Sign in with Google</string>
+    <string name="txt_signin_apple">Sign in with Apple</string>
+    <string name="txt_dont_have_account">Don’t have an account? Sign Up</string>
+    <string name="txt_required">Required*</string>
+    <string name="txt_invalid_email">Invalid Email id</string>
+    <string name="password_short_text"> password is too short</string>
+    <string name="hint_name">Username</string>
+    <string name="txt_sign_up">Let’s Get Started</string>
+    <string name="txt_subtitle_signup">Create an account to continue.</string>
+    <string name="txt_continue">Continue</string>
+    <string name="txt_continue_with">Or continue with</string>
+    <string name="txt_have_an_account">Already have an account? Sign In</string>
+    <string name="txt_continue_google">Continue with Google</string>
+    <string name="txt_continue_apple">Continue with Apple</string>
+    <string name="txt_pwd_recovery">Password Recovery</string>
+    <string name="txt_subtitle_pwd">Enter your email address or phone number to recover your password</string>
+    <string name="txt_send_link">Send Link</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_home_title">New Winter 2021 collections.</string>
+    <string name="btn_shop_now">Shop Now</string>
+    <string name="txt_sell">Selling fast 🔥</string>
+    <string name="txt_send_code">Send Code</string>
+    <string name="txt_popular_title">Popular products</string>
+    <string name="hint_phone">phone</string>
+    <string-array name="page_names">
+        <item>Email</item>
+        <item>Phone</item>
+    </string-array>
+
+    <integer-array name="random_images">
+        <item>@drawable/splash_logo</item>
+        <item>@drawable/google</item>
+        <item>@drawable/apple</item>
+        <item>@drawable/google</item>
+    </integer-array>
+
+    <string name="price"><strike>$45.90</strike></string>
+    <string name="txt_product_name">Elbow Patch Blazer</string>
+    <string name="txt_price">$149.00</string>
+    <string name="txt_product_description">Blazer made with wool blend fabric. Lapel collar and long sleeves. Front flap pockets and welt pocket at chies. Interior Lining. Front button closure.</string>
+    <string name="txt_brand_name">ZARA</string>
+    <string name="txt_account_name">\@zara.official</string>
+    <string name="txt_follow">Follow</string>
+    <string name="txt_xs">XS</string>
+    <string name="txt_size_guide">Size guide</string>
+    <string name="txt_add_to_bag">Add to bag</string>
+    <string name="txt_s">S</string>
+    <string name="txt_m">M</string>
+    <string name="txt_l">L</string>
+    <string name="txt_xl">XL</string>
+    <string name="txt_time_hour">14</string>
+    <string name="txt_gem">:</string>
+    <string name="txt_mins">11</string>
+    <string name="txt_alert">name: %1$s \nemail: %2$s \npassword: %3$s \nid: %4$s</string>
+    <string name="txt_invalid_number">enter valid number</string>
+    <string name="txt_sent">Sent</string>
+    <string name="txt_add">Add</string>
+    <string name="txt_update">Update</string>
+    <string name="txt_delete">Delete</string>
+    <string name="txt_enter_id">Enter ID</string>
+    <string name="hint_user_name">Enter Name</string>
+    <string name="txt_my_profile">My profile</string>
+    <string name="txt_people">People</string>
+    <string name="txt_settings">Settings</string>
+    <string name="txt_share">Share</string>
+    <string name="txt_send">Send</string>
+    <string name="txt_user_name">Jimin Park</string>
+    <string name="txt_about">"Jimin
+Actor,Soundtrack,Composer
+Born - October 13, 1995 in Busan, South Korea
+Park Ji-Min aka Jimin is one of the most active members of BTS on social media. Born on October 13 in 1995, Jimin spent most of his childhood in the Busan district of South Korea.
+
+With a strong affinity towards dancing from an early age, Jimin started learning popping-and-locking in middle school. Post which he joined the Big Hit Entertainment and started training under them. Meanwhile, Jimin is currently studying media studies with Jungkook, RM, Suga, J-Hope and V.
+
+Apart from being the group's main dancer, Jimin is also a vocalist with three solo tracks titled: Lie, Serendipity and Filter. The BTS ARMY is already in love with Jimin's infectious smile, but the talented singer continues to impress them with his creativity as a singer and a performer."</string>
+    <string name="txt_my_profile_">My Profile</string>
+    <string name="txt_share_body">Share App</string>
+    <string name="txt_share_sub">DipStore</string>
+    <string name="txt_share_title">Share Using</string>
+    <string name="txt_view">View</string>
+    <string name="txt_file_name">File Name</string>
+    <string name="txt_enter_data">Enter Data</string>
+</resources>

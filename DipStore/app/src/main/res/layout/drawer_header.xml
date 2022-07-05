@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_10sdp"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivHeader"
+            app:shapeAppearanceOverlay="@style/roundImageview"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jimin" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/header_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/ivHeader"
+            app:layout_constraintEnd_toEndOf="@id/ivHeader"
+            app:layout_constraintTop_toBottomOf="@id/ivHeader"
+            android:text="@string/txt_user_name"
+            style="@style/darkSmallText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
