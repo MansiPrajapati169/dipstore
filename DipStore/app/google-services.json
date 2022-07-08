@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "427479232842",
+    "project_id": "dipstore-173f9",
+    "storage_bucket": "dipstore-173f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427479232842:android:665a1fdc4f8483ead391b3",
+        "android_client_info": {
+          "package_name": "com.example.dipstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427479232842-phq4ktu60ue26qb5cq2ino40hs30umo9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT_N_lXaD9mAJLDVlTzvybz1gLOE_snRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427479232842-phq4ktu60ue26qb5cq2ino40hs30umo9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
